@@ -55,21 +55,18 @@ Additionally:
 To compile the notes, perform the following commands based on which type of document you are trying to produce. 
 
 
-Run the command
-`make {insert type here}`
+Run the command `make {insert type here}` and specify from the following:
 
+1. For pdf, insert `pdf`.
+2. For dvi, insert `all-via-dvi`.
+3. For epub, insert `epub`.
+4. For zip, insert `zip`.
 
-For pdf, insert `all-via-pdf` or `all`.
-
-For dvi, insert `all-via-dvi`.
-
-For epub, insert `epub`.
-
-For zip, insert `zip`.
+Additionally, one can simply type `make` with no options to auto-select `pdf`.
 
 *Note: Do not include the {} from the make command line, replace the whole {insert type here} text with the command corresponding to the correct file type.*
 
-*Ex: To make as a pdf, the full command should be: `make all-via-pdf`*
+*Ex: To make as a pdf, the full command should be: `make pdf` or just `make`.*
 
 ### To Clean your Local Directory Run:
 
