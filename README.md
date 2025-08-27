@@ -48,3 +48,29 @@ Additionally:
 - All figures must be computer-generated. If these figures come from an outside souce, be sure to add references to the bibliography and cite properly.
 - When referencing equations, figures, tables, etc., always use the `\cref{}` command, which will keep syntax and formatting consistent.
 - Each new sentence must start with a new line in the `.tex` document, and paragraphs must have *one* additional line break in between.
+- All code must use `\inputminted[language]{file.extension}` when being put into the document.
+- All indentation must be *two spaces*.
+
+## Compiling Notes
+To compile the notes, perform the following commands based on which type of document you are trying to produce. 
+
+
+Run the command
+`make {insert type here}`
+
+
+For pdf, insert `all-via-pdf` or `all`.
+
+For dvi, insert `all-via-dvi`.
+
+For epub, insert `epub`.
+
+For zip, insert `zip`.
+
+*Note: Do not include the {} from the make command line, replace the whole {insert type here} text with the command corresponding to the correct file type.*
+
+*Ex: To make as a pdf, the full command should be: `make all-via-pdf`*
+
+### To Clean your Local Directory Run:
+
+`make clean` or `make realclean`
