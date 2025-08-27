@@ -1,0 +1,36 @@
+# Auxiliary files
+*.aux
+*.log
+*.blg
+*.bbl
+*.toc
+*.lof
+*.lot
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.dvi
+*.ps
+*.pdf 
+
+# Specific package-generated files
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.idx
+*.ind
+*.ilg
+*.maf
+*.mtc
+*.mtc1
+
+# Editor-specific files (e.g., TeXstudio, VS Code)
+*.bak
+*.swp
+*~
+.#*
