@@ -24,6 +24,7 @@ epub:
 
 clean:
 	rm -f $(manuscript).pdf *.dvi *.toc *.aux *.out *.log *.bbl *.blg *.log *.spl *~ *.spl *.zip *.acn *.glo *.ist *.epub *.fdb_latxmk *.lof *.fls *.lot
+	rm src/*.aux
 
 realclean: clean
 	rm -rf $(manuscript).dvi
