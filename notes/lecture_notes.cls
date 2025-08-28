@@ -23,13 +23,21 @@
 \RequirePackage{minted}
 \RequirePackage{units}
 \RequirePackage[labelfont=bf]{caption}
-\RequirePackage[noabbrev,capitalize]{cleveref}
 \RequirePackage{amsthm}
 \RequirePackage{bm}
 \RequirePackage{subcaption}
 \RequirePackage{longfbox}
 \RequirePackage{eso-pic}
 \RequirePackage{calc}
+\RequirePackage{physics}
+\RequirePackage{parskip}
+\RequirePackage{mdframed}
+
+\RequirePackage[noabbrev,capitalize]{cleveref}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
 
 \renewcommand\qedsymbol{\blacksquare}
 
@@ -112,7 +120,7 @@
   % Subtitle.
   \placetextbox{0.12}{0.62}{0.70}{0.25}{flushleft}{height-align=top,border-style=none}{
     \color{black}
-    \fontfamily{qpl}\fontsize{14}{14}\selectfont\textit{\@subtitle}
+    \fontfamily{qpl}\fontsize{14}{14}\selectfont\textit{\@subtitle, \@date}
   }
 
   % Authors
@@ -122,10 +130,12 @@
     Lecture notes by \par
     \@professor \par
     \@professortitle \par
-    \vspace{18pt}%
+    \vspace{24pt}%
+    Compiled and typeset with the help of:\\
+    \vspace{12pt}
     \IfNotEmpty{\@gradstudentcontribs}{\@gradstudentcontribs \par Graduate Students \par \vspace{18pt}}%
     \IfNotEmpty{\@undergradstudentcontribs}{\@undergradstudentcontribs \par Undergraduate Students \par \vspace{18pt}}%
-    \@date%
+
   }%
 
 
