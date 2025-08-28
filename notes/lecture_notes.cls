@@ -101,8 +101,7 @@
 \newcommand\@titlepage{
   % Roman page numbers starting here.
   \pagenumbering{roman}
-  \setcounter{page}{1}
-  \thispagestyle{empty}
+  \setcounter{page}{0}
 
   % Title.
   \placetextbox{0.12}{0.87}{0.70}{0.25}{flushleft}{height-align=bottom,border-style=none}{
@@ -148,7 +147,9 @@
 %==============================================================================%
 \newenvironment{foreword}{%
   \clearpage
-  \thispagestyle{empty}%
+  \pagestyle{fancy}% <-- add this
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}%
   \section*{Foreword}%
   \addcontentsline{toc}{section}{Foreword}%
 }{%
@@ -161,6 +162,7 @@
 \newcommand\frontmatter{
   \@titlepage
   \blankpage
+  % \blankpage
 }
 \makeatother
 
