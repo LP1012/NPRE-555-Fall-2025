@@ -1,8 +1,19 @@
 \documentclass{lecture_notes}
 
+%==============================================================================%
+% CONVENIENCE COMMANDS
+%==============================================================================%
+\newcommand{\vvec}{\vec{v}}
+\newcommand{\rvec}{\vec{r}}
+\newcommand{\omhat}{\hat{\Omega}}
+\newcommand{\dom}{\dd \hat{\Omega}}
+\newcommand{\de}{\dd E}
+\newcommand{\dthree}{\dd^3}
+\newcommand{\dtheta}{\dd \theta}
+\newcommand{\dphi}{\dd \phi}
+%==============================================================================%
+
 \onehalfspacing
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
 
 \title{NPRE 555: Reactor Theory I}
 \subtitle{Lecture Notes}
@@ -12,7 +23,7 @@
 \gradstudentcontribs{Liam Pohlmann}
 \undergradstudentcontribs{}
 
-\date{\textbf{Fall 2025}}
+\date{Fall 2025}
 
 \begin{document}
 \frontmatter
@@ -38,10 +49,15 @@
 \setcounter{page}{1}
 
 \section{Definitions and Fundamentals}
+\input{src/defs_and_funds}
 
+\section{The Boltzmann Transport Equation}
+\input{src/control_vol}
+
+\clearpage
 \appendix
-\section{Code}
 
+\clearpage
 \bibliographystyle{ieeetr}
 \bibliography{NPRE_555}
 \end{document}
